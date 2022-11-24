@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+  <title>News Page</title>
+</head>
+<body>
+  <!-- Nav -->
+  <nav class="relative mx-auto p-6">
+    <!-- Flex Container -->
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <div class="pt-2">
+        <img src="images/logo.svg" alt="" />
+      </div>
+      <!-- Menu Items -->
+      <div class="sm:hidden space-x-6 md:flex">
+        <a href="#" class="hover:text-softRed">Home</a>
+        <a href="#" class="hover:text-softRed">New</a>
+        <a href="#" class="hover:text-softRed">Popular</a>
+        <a href="#" class="hover:text-softRed">Trending</a>
+        <a href="#" class="hover:text-softRed">Categories</a>
+      </div>
+      <!-- Hamburger Icon -->
+      <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="md:hidden">
+      <div id="menu"
+        class="absolute flex-col items-left hidden self-end py-36 px-8 mt-10 space-y-6  bg-white sm:w-auto sm:self-center left-32 right-0 ">
+        <a href="#" class="hover:text-softRed">Home</a>
+        <a href="#" class="hover:text-softRed">New</a>
+        <a href="#" class="hover:text-softRed">Popular</a>
+        <a href="#" class="hover:text-softRed">Trending</a>
+        <a href="#" class="hover:text-softRed">Categories</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="grid grid-cols-1 md:grid-cols-3 justify-center px-6 mx-auto mt-6 mb-10 gap-4">
+      <div class="grid-cols-1 md:hidden">
+        <img class="" src="./images/image-web-3-mobile.jpg" alt="">
+      </div>
+      <div class="md:hidden">
+        <h1 class="text-veryDarkBlue text-4xl font-bold font-inter pt-3">The Bright Future of Web 3.0?</h1>
+      </div>
+      <div class="text-darkGrayishBlue text-sm font-inter pt-3 md:hidden">
+        <p class="mb-8">We dive into the next evolution of the web that claims to put the power of the platforms back into the
+          hands of the
+          people. But is it really fulfilling its promise?</p>
+          <div class="mb-6">
+            <a href="#" class="text-white font-sm rounded-none py-3 px-8 tracking-widest bg-softRed hover:bg-veryDarkBlue">READ MORE</a>
+          </div>
+      </div>
+      <!-- Mobile Tabs -->
+      <div class="md:grid col-span-2 sm:hidden">
+        <img class="" src="./images/image-web-3-desktop.jpg" alt="">
+      </div>
+      <div class="md:grid row-span-2 bg-veryDarkBlue p-4">
+        <h1 class="text-4xl text-softOrange font-bold font-inter mb-4">New</h1>
+        <!-- Single Item 1 -->
+        <h3 class="text-white font-bold mb-2 hover:text-softOrange cursor-pointer">Hydrogen VS Electric Cars</h3>
+        <p class="text-xs text-grayishBlue">
+          Will hydrogen-fueled cars ever catch up to EVs?
+        </p>
+        <hr class="my-6">
+        <!-- End of Single Item 1 -->
+        <!-- Single Item 2 -->
+        <h3 class="text-white font-bold mb-2 hover:text-softOrange cursor-pointer">The Downsides of AI Artistry</h3>
+        <p class="text-xs text-grayishBlue">
+          What are the possible adverse effects of on-demand AI image generation?
+        </p>
+        <hr class="my-6">
+        <!-- End of Single Item 2 -->
+        <!-- Single Item 3 -->
+        <h3 class="text-white font-bold mb-2 hover:text-softOrange cursor-pointer">Is VC Funding Drying Up?</h3>
+        <p class="text-xs text-grayishBlue mb-4">
+          Private funding by VC firms is down 50% YOY. We take a look at what that means.
+        </p>
+        <!-- End of Single Item 3 -->
+      </div>
+      <div>
+        <h1 class="md:grid text-veryDarkBlue text-4xl font-bold font-inter pt-3 sm:hidden">The Bright Future of Web 3.0?</h1>
+      </div>
+      <div class="md:grid text-darkGrayishBlue text-sm font-inter pt-3 sm:hidden">
+        <p class="mb-8">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the
+        people. But is it really fulfilling its promise?</p>
+        <div>
+          <a href="#" class="text-white font-sm rounded-none py-3 px-4 tracking-widest bg-softRed hover:bg-veryDarkBlue">READ MORE</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Column Section -->
+  <section id="ctas" class="mt-16">
+    <div class="md:grid grid-cols-3 gap-3 justify-between mx-8 mb-10">
+      <div>
+        <img class="float-left mr-6 w-24 h-32" src="./images/image-retro-pcs.jpg" alt="" srcset="">
+        <h1 class="text-4xl font-bold text-grayishBlue mb-3">01</h1>
+        <h2 class="text-veryDarkBlue font-bold mb-2 hover:text-softRed">Reviving Retro PCs</h2>
+        <p class="text-sm text-darkGrayishBlue">What happens when old PCs are given modern upgrades?</p>
+      </div>
+      <div class="sm:my-10 md:my-0">
+        <img class="float-left mr-6 w-24 h-32" src="./images/image-top-laptops.jpg" alt="" srcset="">
+        <h1 class="text-4xl font-bold text-grayishBlue mb-3">02</h1>
+        <h2 class="text-veryDarkBlue font-bold mb-2 hover:text-softRed">Top 10 Laptops of 2022</h2>
+        <p class="text-sm text-darkGrayishBlue">Our best picks for various needs and budgets.</p>
+      </div>
+      <div>
+        <img class="float-left mr-6 w-24 h-32" src="./images/image-gaming-growth.jpg" alt="" srcset="">
+        <h1 class="text-4xl font-bold text-grayishBlue mb-3">03</h1>
+        <h2 class="text-veryDarkBlue font-bold mb-2 hover:text-softRed">The Growth of Gaming</h2>
+        <p class="text-sm text-darkGrayishBlue">How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>
+  </section>
+<script src="js/script.js"></script>
+</body>
+</html>
